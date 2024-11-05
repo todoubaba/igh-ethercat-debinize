@@ -1,0 +1,11 @@
+--- a/script/ethercatctl.in
++++ b/script/ethercatctl.in
+@@ -172,7 +172,7 @@
+ 
+ #------------------------------------------------------------------------------
+ 
+-restart)
++restart|force-reload)
+     $0 stop || exit 1
+     sleep 1
+     $0 start
