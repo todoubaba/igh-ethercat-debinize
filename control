@@ -1,0 +1,15 @@
+Source: ethercat
+Section: devel
+Priority: optional
+Maintainer: yanglin <todoubaba@gmail.com>
+Build-Depends: debhelper-compat (= 13), quilt
+Standards-Version: 4.5.1
+Homepage: https://etherlab.org/ethercat
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/todoubaba/igh-ethercat-debinize
+
+Package: ethercat
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}, systemd
+Description: Igh EtherCAT
+ Igh EtherCAT user libraries and kernel modules.

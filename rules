@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_auto_configure:
+	./bootstrap
+	./configure --prefix=/usr --exec-prefix=/ --sysconfdir=/etc \
+				--with-linux-dir=$(CURDIR)/../linux-dovetail \
+				--with-xenomai-dir=/usr \
+				--with-xenomai-config=/bin/xeno-config \
+				--with-systemdsystemunitdir=/lib/systemd/system \
+				--enable-rtdm=yes \
+				--enable-8139too=no \
+				--enable-igb=yes
+
+override_dh_auto_build:
+	dh_quilt_unpatch
+	dh_quilt_patch
+	make all modules
+
+override_dh_auto_install:
+	make INSTALL_MOD_PATH=$(CURDIR)/debian/tmp modules_install
+	dh_auto_install
+	sed -i "/dependency_libs/ s/'.*'/''/" `find debian/ -name '*.la'`
+	rm -rf $(CURDIR)/debian/ethercat/etc/init.d
+	rm -rf $(CURDIR)/debian/ethercat/etc/sysconfig
+	mkdir -p $(CURDIR)/debian/ethercat/lib/udev/rules.d/
+	cp $(CURDIR)/debian/config/99-EtherCAT.rules $(CURDIR)/debian/ethercat/lib/udev/rules.d/
