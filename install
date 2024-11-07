@@ -2,13 +2,3 @@ lib/modules/6.1.111-xen3+/ethercat/devices/ec_generic.ko    lib/modules/6.1.111-
 lib/modules/6.1.111-xen3+/ethercat/devices/igb/ec_igb.ko    lib/modules/6.1.111-xen3+/ethercat/devices/igb/
 lib/modules/6.1.111-xen3+/ethercat/examples/mini/ec_mini.ko lib/modules/6.1.111-xen3+/ethercat/examples/mini/
 lib/modules/6.1.111-xen3+/ethercat/master/ec_master.ko      lib/modules/6.1.111-xen3+/ethercat/master/
-lib/modules/6.1.111-xen3+/modules.alias                     lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.alias.bin                 lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.builtin.alias.bin         lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.builtin.bin               lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.dep                       lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.dep.bin                   lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.devname                   lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.softdep                   lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.symbols                   lib/modules/6.1.111-xen3+/
-lib/modules/6.1.111-xen3+/modules.symbols.bin               lib/modules/6.1.111-xen3+/
