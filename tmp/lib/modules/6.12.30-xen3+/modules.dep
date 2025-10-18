@@ -1,0 +1,4 @@
+ethercat/devices/igb/ec_igb.ko.xz: ethercat/master/ec_master.ko.xz
+ethercat/devices/ec_generic.ko.xz: ethercat/master/ec_master.ko.xz
+ethercat/examples/mini/ec_mini.ko.xz: ethercat/master/ec_master.ko.xz
+ethercat/master/ec_master.ko.xz:
