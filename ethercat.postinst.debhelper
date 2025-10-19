@@ -1,7 +1,0 @@
-# Automatically added by dh_installmodules/13.24.2
-if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
-	if [ -e /boot/System.map-6.12.30-xen3+ ]; then
-		depmod -a -F /boot/System.map-6.12.30-xen3+ 6.12.30-xen3+ || true
-	fi
-fi
-# End automatically added section
