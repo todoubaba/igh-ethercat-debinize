@@ -1,11 +1,1 @@
-lib/modules/6.12.30-xen3+/modules.alias
-lib/modules/6.12.30-xen3+/modules.alias.bin
-lib/modules/6.12.30-xen3+/modules.builtin.alias.bin
-lib/modules/6.12.30-xen3+/modules.builtin.bin
-lib/modules/6.12.30-xen3+/modules.dep
-lib/modules/6.12.30-xen3+/modules.dep.bin
-lib/modules/6.12.30-xen3+/modules.devname
-lib/modules/6.12.30-xen3+/modules.softdep
-lib/modules/6.12.30-xen3+/modules.symbols
-lib/modules/6.12.30-xen3+/modules.symbols.bin
-lib/modules/6.12.30-xen3+/modules.weakdep
+lib/modules/**

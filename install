@@ -1,4 +1,0 @@
-lib/modules/6.12.30-xen3+/ethercat/devices/ec_generic.ko.xz    lib/modules/6.12.30-xen3+/ethercat/devices/
-lib/modules/6.12.30-xen3+/ethercat/devices/igb/ec_igb.ko.xz    lib/modules/6.12.30-xen3+/ethercat/devices/igb/
-lib/modules/6.12.30-xen3+/ethercat/examples/mini/ec_mini.ko.xz lib/modules/6.12.30-xen3+/ethercat/examples/mini/
-lib/modules/6.12.30-xen3+/ethercat/master/ec_master.ko.xz      lib/modules/6.12.30-xen3+/ethercat/master/

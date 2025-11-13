@@ -28,3 +28,7 @@ override_dh_auto_install:
 	rm -rf $(CURDIR)/debian/ethercat/etc/sysconfig
 	mkdir -p $(CURDIR)/debian/ethercat/lib/udev/rules.d/
 	cp $(CURDIR)/debian/config/99-EtherCAT.rules $(CURDIR)/debian/ethercat/lib/udev/rules.d/
+	find $(CURDIR)/debian/tmp/lib/modules -type f -name '*.ko*' | while read f; do \
+        target=$${f#$(CURDIR)/debian/tmp/}; \
+        install -D -m644 "$$f" "debian/ethercat/$$target"; \
+    done
